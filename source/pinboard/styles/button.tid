@@ -1,0 +1,9 @@
+created: 20191114140024292
+creator: Mohammad
+modified: 20191114152104937
+modifier: Mohammad
+tags: $:/tags/Stylesheet
+title: $:/plugins/kookma/pinboard/styles/button
+type: text/css
+
+.tc-btn-invisible { outline:none; }

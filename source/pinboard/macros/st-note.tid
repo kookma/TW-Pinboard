@@ -1,0 +1,25 @@
+created: 20191113172026632
+modified: 20191114154737741
+tags: $:/tags/Macro
+title: $:/plugins/kookma/pinboard/macros/st-note
+type: text/vnd.tiddlywiki
+
+\define _st_addTag(newTag)
+<$fieldmangler>
+<$action-sendmessage $message="tm-add-tag" $param="$newTag$"/>
+</$fieldmangler>
+\end
+
+\define _st_single_note(tiddler, priority)
+<div class="st-note st-bg-$priority$" style="display:inline-block;margin-right:10px;vertical-align:top;">
+<span class="st-elements"><$link/></span><<folding-editor """$tiddler$""">>
+<$button class="tc-btn-invisible tc-tiddlylink pin $priority$-pin" actions=<<_st_addTag newTag:done>> tooltip="remove note"/>
+<span class="st-elements">Modified on: <$view field="modified" format=date template="YYYY-0MM-0DD"/></span>
+</div>
+\end
+
+\define sticky-notes()
+<$list filter="[tag[pin]!tag[done]]">
+<$macrocall $name="_st_single_note" tiddler=<<currentTiddler>> priority={{!!priority}}/>
+</$list>
+\end

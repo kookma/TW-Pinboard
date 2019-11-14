@@ -1,0 +1,25 @@
+created: 20191113142659496
+creator: Mohammad
+modified: 20191114153132236
+modifier: Mohammad
+tags: $:/tags/Stylesheet
+title: $:/plugins/kookma/pinboard/styles/notice
+type: text/css
+
+.st-note {
+  margin:50px 0px;
+  position: relative;
+  width: 300px;
+  color: #333;
+ /* margin: 0 auto;*/
+  padding: 20px;
+  font-family: Satisfy;
+  font-size: 1.2em;
+  box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
+}
+
+.st-note .author {
+  display: block;
+  margin: 40px 0 0 0;
+  text-align: right;
+}

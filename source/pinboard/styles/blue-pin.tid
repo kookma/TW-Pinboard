@@ -1,0 +1,9 @@
+created: 20191113144537156
+modified: 20191114152104940
+tags: $:/tags/Stylesheet
+title: $:/plugins/kookma/pinboard/styles/blue-pin
+type: text/css
+
+.blue-pin:after {
+  background-color: blue;
+}

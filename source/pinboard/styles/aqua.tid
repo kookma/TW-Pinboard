@@ -1,0 +1,16 @@
+created: 20191113145327442
+creator: Mohammad
+modified: 20191114152104949
+modifier: Mohammad
+tags: $:/tags/Stylesheet
+title: $:/plugins/kookma/pinboard/styles/aqua
+type: text/css
+
+.aqua {
+  background: lavender;
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  transform: rotate(2deg);
+}

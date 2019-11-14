@@ -1,0 +1,24 @@
+created: 20191113172408057
+modified: 20191114152104946
+tags: $:/tags/Stylesheet
+title: $:/plugins/kookma/pinboard/styles/bg-colors
+type: text/css
+
+.st-bg-red{
+background-color:lavenderblush
+}
+.st-bg-red a{
+color:#680000;
+}
+
+.st-bg-green{
+background-color:honeydew
+}
+
+.st-bg-blue{
+background-color:lightcyan
+}
+
+.st-bg-yellow{
+background-color:lightyellow
+}

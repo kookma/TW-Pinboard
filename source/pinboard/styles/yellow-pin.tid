@@ -1,0 +1,9 @@
+created: 20191113144855730
+modified: 20191114152104891
+tags: $:/tags/Stylesheet
+title: $:/plugins/kookma/pinboard/styles/yellow-pin
+type: text/css
+
+.yellow-pin:after {
+  background-color: yellow;
+}

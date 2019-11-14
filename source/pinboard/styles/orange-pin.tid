@@ -1,0 +1,9 @@
+created: 20191113145205155
+modified: 20191114152104920
+tags: $:/tags/Stylesheet
+title: $:/plugins/kookma/pinboard/styles/orange-pin
+type: text/css
+
+.orange-pin:after {
+  background-color: orange;
+}

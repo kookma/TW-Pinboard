@@ -1,0 +1,17 @@
+created: 20191114154848628
+modified: 20191114154956112
+tags: $:/tags/Stylesheet
+title: $:/plugins/kookma/pinboard/styles/style.css
+type: text/css
+
+/*Style the cork board*/
+
+/*Hide tiddler header*/
+.cork-board .tc-subtitle {display:none;}
+.cork-board .tc-tiddler-title {display:none;}
+
+/* add the border*/
+.cork-board {
+ border: 10px solid white;
+ border-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50'><defs><linearGradient id='redgradient'><stop offset='0' stop-color='%23FFC14D'/><stop offset='0.362' stop-color='%23FF4834'/><stop offset='1' stop-color='%233B0300'/></linearGradient></defs><g id='Layer_1'><path d='M0,0 L50,0 L50,50 L0,50 L0,0 z' fill='url(%23redgradient)' width='100%' height='100%'/></g></svg>") 10% stretch;
+}

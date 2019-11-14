@@ -1,0 +1,25 @@
+created: 20191114142348719
+modified: 20191114152104962
+tags: $:/tags/Macro
+title: $:/plugins/kookma/pinboard/macros/folding-editor
+type: text/vnd.tiddlywiki
+
+\define folding-editor(tiddler)
+<$set name="state" value={{{ [[$:/state/folding-editor/]addsuffix<currentTiddler>addsuffix<__tiddler__>] }}}>
+<$reveal stateTitle=<<state>> type="nomatch" text="edit">
+<span style="float: right;">
+<$button class="tc-btn-invisible xx100" setTitle=<<state>> setTo="edit">{{$:/core/images/edit-button}}</$button>
+</span>
+<$list filter="[<__tiddler__>is[missing]] [<__tiddler__>!is[missing]!has[text]]">
+<<__tiddler__>>
+</$list>
+<$transclude tiddler=<<__tiddler__>> mode="block"/>
+</$reveal>
+<$reveal stateTitle=<<state>> type="match" text="edit">
+<span style="float: right;">
+<$button class="tc-btn-invisible" setTitle=<<state>> setTo="">{{$:/core/images/done-button}}</$button>
+</span>
+<$edit-text class="tc-edit-texteditor" tiddler=<<__tiddler__>> tag="textarea" default="" placeholder={{$:/language/EditTemplate/Body/Placeholder}}/>
+</$reveal>
+</$set>
+\end

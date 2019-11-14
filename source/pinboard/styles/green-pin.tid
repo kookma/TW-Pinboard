@@ -1,0 +1,9 @@
+created: 20191113144915689
+modified: 20191114152104926
+tags: $:/tags/Stylesheet
+title: $:/plugins/kookma/pinboard/styles/green-pin
+type: text/css
+
+.green-pin:after {
+  background-color: green;
+}

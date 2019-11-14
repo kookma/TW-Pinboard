@@ -1,0 +1,9 @@
+created: 20191113144101948
+modified: 20191114152104900
+tags: $:/tags/Stylesheet
+title: $:/plugins/kookma/pinboard/styles/red-pin
+type: text/css
+
+.red-pin:after {
+  background-color: red;
+}
