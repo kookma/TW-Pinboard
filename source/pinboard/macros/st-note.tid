@@ -1,5 +1,5 @@
 created: 20191113172026632
-modified: 20191114154737741
+modified: 20191114161930200
 tags: $:/tags/Macro
 title: $:/plugins/kookma/pinboard/macros/st-note
 type: text/vnd.tiddlywiki
@@ -18,7 +18,7 @@ type: text/vnd.tiddlywiki
 </div>
 \end
 
-\define sticky-notes()
+\define pinboard-ui()
 <$list filter="[tag[pin]!tag[done]]">
 <$macrocall $name="_st_single_note" tiddler=<<currentTiddler>> priority={{!!priority}}/>
 </$list>

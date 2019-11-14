@@ -1,5 +1,5 @@
 created: 20191114142348719
-modified: 20191114152104962
+modified: 20191114162127508
 tags: $:/tags/Macro
 title: $:/plugins/kookma/pinboard/macros/folding-editor
 type: text/vnd.tiddlywiki
@@ -8,7 +8,7 @@ type: text/vnd.tiddlywiki
 <$set name="state" value={{{ [[$:/state/folding-editor/]addsuffix<currentTiddler>addsuffix<__tiddler__>] }}}>
 <$reveal stateTitle=<<state>> type="nomatch" text="edit">
 <span style="float: right;">
-<$button class="tc-btn-invisible xx100" setTitle=<<state>> setTo="edit">{{$:/core/images/edit-button}}</$button>
+<$button class="tc-btn-invisible st-elements" setTitle=<<state>> setTo="edit">{{$:/core/images/edit-button}}</$button>
 </span>
 <$list filter="[<__tiddler__>is[missing]] [<__tiddler__>!is[missing]!has[text]]">
 <<__tiddler__>>
