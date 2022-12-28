@@ -1,17 +1,8 @@
-created: 20191113142629999
-modified: 20191114155351852
 tags: 
 title: $:/plugins/kookma/pinboard/history
 type: text/vnd.tiddlywiki
 
-;2019.11.14
-:Release 0.5.0
-: sticky notes renamed into Pinbaord
-:flexgrid removed
-:pin can be toggled to remove the note (make it done)
-:folding edditor is added
+Full change log  https://kookma.github.io/TW-Pinboard/#ChangeLog
 
-
-;2019.11.13
-:Release 0.1.0
-:proof of concept
+* ''0.9.0'' -- 2023.11.21 -- bug fixes
+* ''0.1.0'' -- 2022.11.13 -- proof of concept

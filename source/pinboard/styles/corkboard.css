@@ -1,14 +1,11 @@
-created: 20191114154848628
-modified: 20191114162104362
-tags: $:/tags/Stylesheet
-title: $:/plugins/kookma/pinboard/styles/corkborad
-type: text/css
-
 /*Style the cork board*/
 
 /*Hide tiddler header*/
 .cork-board .tc-subtitle {display:none;}
-.cork-board .tc-tiddler-title {display:none;}
+.cork-board .tc-tiddler-title {visibility:hidden;}
+.cork-board:hover .tc-tiddler-title {
+ visibility:visible;
+ color:yellow;}
 
 /* add the border*/
 .cork-board {

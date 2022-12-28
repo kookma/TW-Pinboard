@@ -1,0 +1,9 @@
+.tc-btn-invisible.st-note{
+	outline:none;
+}
+.tc-btn-invisible.st-btn svg{
+	fill:lightgray;
+	width: 2em;
+	height: 2em;
+	vertical-align: middle;
+}

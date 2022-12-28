@@ -1,9 +1,8 @@
-created: 20191114155007325
-modified: 20191114155048014
+code-body: yes
 tags: $:/tags/Stylesheet
 title: $:/plugins/kookma/pinboard/styles/corkboard-background
 type: text/vnd.tiddlywiki
 
 .cork-board{
-background: url(<<datauri "cork.jpg">>);
+background: url(<<datauri "$:/plugins/kookma/pinboard/images/cork.jpg">>);
 }

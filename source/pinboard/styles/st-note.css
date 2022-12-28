@@ -1,0 +1,18 @@
+.st-note {
+  margin:50px 0px;
+  position: relative;
+  width: 300px;
+  color: #333;
+ /* margin: 0 auto;*/
+  padding: 20px;
+  box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
+}
+
+.st-note{
+	display:inline-block;
+	margin-right:10px;
+	vertical-align:top;
+}
+
+/* prevent textarea from horizontal resizing */
+.st-note .tc-edit-texteditor { resize: vertical; }

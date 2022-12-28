@@ -1,0 +1,13 @@
+.st-elements{
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility ease-in 300ms, opacity ease-in 300ms;
+}
+.st-note:hover .st-elements{
+  visibility: visible;
+  opacity: 1;
+}
+
+.st-elements{
+font-size:0.8em;
+}

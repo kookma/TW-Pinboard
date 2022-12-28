@@ -1,0 +1,32 @@
+code-body: yes
+tags: 
+title: $:/plugins/kookma/pinboard/macros/helper
+type: text/vnd.tiddlywiki
+
+\define new-note-actions()
+<$let new-note-title=<<unusedtitle baseName:"note" template:"$basename$ $count:3$">> >
+<$action-sendmessage $message="tm-new-tiddler" tags="pin" title=<<new-note-title>> priority="yellow" text="Write here ..."/>
+</$let>
+\end
+
+\define _st-create-new-note()
+<span style="float:right">
+<$button  class="tc-btn-invisible tc-tiddlylink st-btn" tooltip="create new notice" actions=<<new-note-actions>> >
+{{$:/plugins/kookma/pinboard/images/file-alt}}
+</$button>
+</span>
+\end
+
+\define _st_addTag(newTag)
+<$fieldmangler>
+<$action-sendmessage $message="tm-add-tag" $param="$newTag$"/>
+</$fieldmangler>
+\end
+
+\define _st_single_note(tiddler, priority)
+<div class="st-note st-bg-$priority$">
+<span class="st-elements"><$link/></span><<folding-editor """$tiddler$""">>
+<$button class="tc-btn-invisible tc-tiddlylink st-pin st-$priority$-pin" actions=<<_st_addTag newTag:done>> tooltip="remove note"/>
+<span class="st-elements">Modified on: <$view field="modified" format=date template="YYYY-0MM-0DD"/></span>
+</div>
+\end

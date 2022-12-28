@@ -1,0 +1,6 @@
+tags: 
+title: $:/plugins/kookma/pinboard/settings
+type: text/vnd.tiddlywiki
+
+;Options
+:<$checkbox tiddler="$:/plugins/kookma/pinboard/styles/font" tag="$:/tags/Stylesheet"> Use //Satisfy// font from Google</$checkbox>

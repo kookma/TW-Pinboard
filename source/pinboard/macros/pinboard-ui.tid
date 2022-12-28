@@ -1,0 +1,12 @@
+tags: $:/tags/Macro
+title: $:/plugins/kookma/pinboard/macros/pinboard-ui
+type: text/vnd.tiddlywiki
+
+\define pinboard-ui()
+\import $:/plugins/kookma/pinboard/macros/folding-editor
+\import $:/plugins/kookma/pinboard/macros/helper
+<<_st-create-new-note>>
+<$list filter="[tag[pin]!tag[done]!has[draft.of]]">
+<$macrocall $name="_st_single_note" tiddler=<<currentTiddler>> priority={{!!priority}}/>
+</$list>
+\end

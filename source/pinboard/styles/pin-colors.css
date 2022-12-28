@@ -1,0 +1,15 @@
+.st-red-pin:after {
+  background-color: red;
+}
+
+.st-blue-pin:after {
+  background-color: blue;
+}
+
+.st-yellow-pin:after {
+  background-color: yellow;
+}
+
+.st-green-pin:after {
+  background-color: green;
+}
