@@ -1,6 +1,6 @@
 # TW-Pinboard
 
-This is a proof of concept for creating a [[pinboard|https://en.wikipedia.org/wiki/Bulletin_board]] plugin
+This is a proof of concept for creating a   [pinboard](https://en.wikipedia.org/wiki/Bulletin_board)
 
 * a pinboard contains some notices pinned on a board
 * a notice is a tiddler tagged with `pin`
