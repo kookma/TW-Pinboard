@@ -1,0 +1,13 @@
+{
+    "title": "$:/plugins/kookma/pinboard",
+    "name": "Pinboard",
+    "description": "Create a board to pin messages and pictures",
+    "author": "Mohammad Rahmani",
+    "version": "1.0.0",
+    "core-version": ">=5.2.0",
+    "source": "https://github.com/kookma/TW-Pinboard",
+    "list": "readme license history",
+    "plugin-type": "plugin",
+    "parent-plugin": "",
+    "dependents": ""
+}
