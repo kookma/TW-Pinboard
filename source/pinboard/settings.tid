@@ -1,6 +1,13 @@
+caption: Pinboard
 tags: 
 title: $:/plugins/kookma/pinboard/settings
 type: text/vnd.tiddlywiki
 
-;Options
-:<$checkbox tiddler="$:/plugins/kookma/pinboard/styles/font" tag="$:/tags/Stylesheet"> Use //Satisfy// font from Google</$checkbox>
+<$tiddler tiddler="$:/config/Pinboard/Font">
+
+; Notice font
+:<$radio field="text" value="Indie Flower" default=""> Indie Flower</$radio>
+:<$radio field="text" value="Satisfy" default=""> Satisfy</$radio>
+:<$radio field="text" value="" default=""> Default</$radio>
+
+</$tiddler>

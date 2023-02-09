@@ -1,0 +1,28 @@
+code-body: yes
+tags: $:/tags/Stylesheet
+title: $:/plugins/kookma/pinboard/styles/font
+type: text/vnd.tiddlywiki
+
+/* latin */
+@font-face {
+  font-family: 'Satisfy';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Satisfy Regular'), local('Satisfy-Regular'), 
+       url(<<datauri "$:/plugins/kookma/pinboard/fonts/satisfy-regular.woff2">>) format("woff2");
+}
+
+@font-face {
+  font-family: 'Indie Flower';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Indie Flower Regular'), local('Indie-Flower-Regular'), 
+       url(<<datauri "$:/plugins/kookma/pinboard/fonts/indieflower-regular.woff2">>) format("woff2");
+}
+
+<$list filter="[[$:/config/Pinboard/Font]get[text]]">
+.st-note{
+  font-family: <<currentTiddler>>;
+  font-size: 1.2em;
+}
+</$list>
