@@ -1,4 +1,12 @@
 .st-pin {
+	padding: 0;
+	margin: 0;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.st-pin {
 	background-color: #aaa;
 	display: block;
 	height: 32px;

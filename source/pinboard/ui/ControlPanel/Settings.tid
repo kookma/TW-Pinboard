@@ -1,0 +1,22 @@
+caption: Pinboard
+created: 20230928092220518
+modified: 20230928092459637
+tags: $:/tags/ControlPanel/SettingsTab $:/tags/MoreSideBar
+title: $:/plugins/kookma/pinboard/ui/ControlPanel/Settings
+type: text/vnd.tiddlywiki
+
+These settings let you customise the behaviour of Pinboard plugin.
+
+---
+
+;Show Pinboard setting in more sidebar
+:<$checkbox tiddler="$:/plugins/kookma/pinboard/ui/ControlPanel/Settings" tag="$:/tags/MoreSideBar"> Show setting in "More" sidebar</$checkbox>
+
+<$tiddler tiddler="$:/config/Pinboard/Font">
+
+; Notice font
+:<$radio field="text" value="Indie Flower" default=""> Indie Flower</$radio>
+:<$radio field="text" value="Satisfy" default=""> Satisfy</$radio>
+:<$radio field="text" value="" default=""> Default</$radio>
+
+</$tiddler>

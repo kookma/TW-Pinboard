@@ -1,5 +1,6 @@
 code-body: yes
-tags: 
+created: 20230928115455913
+modified: 20230928115458514
 title: $:/plugins/kookma/pinboard/macros/helper
 type: text/vnd.tiddlywiki
 
@@ -26,7 +27,7 @@ type: text/vnd.tiddlywiki
 \define _st_single_note(tiddler, priority)
 <div class="st-note st-bg-$priority$">
 <span class="st-elements"><$link/></span><<folding-editor """$tiddler$""">>
-<$button class="tc-btn-invisible tc-tiddlylink st-pin st-$priority$-pin" actions=<<_st_addTag newTag:done>> tooltip="remove note"/>
+<$button class="st-pin st-$priority$-pin" actions=<<_st_addTag newTag:done>> tooltip="remove note"/>
 <span class="st-elements">Modified on: <$view field="modified" format=date template="YYYY-0MM-0DD"/></span>
 </div>
 \end
