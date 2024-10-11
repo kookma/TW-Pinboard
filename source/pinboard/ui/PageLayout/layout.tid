@@ -1,5 +1,8 @@
 title: $:/plugins/kookma/pinboard/ui/PageLayout/layout
+name: Pinboard
+description: Create a board to pin messages and pictures
 tags: $:/tags/Layout
+icon: $:/plugins/kookma/pinboard/images/cork.jpg
 
 \whitespace trim
 \import [subfilter{$:/core/config/GlobalImportFilter}]

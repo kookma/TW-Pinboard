@@ -6,15 +6,28 @@ type: text/vnd.tiddlywiki
 \define new-note-actions()
 <$let new-note-title=<<unusedtitle baseName:"note" template:"$basename$ $count:3$">> >
 <$action-sendmessage $message="tm-new-tiddler" tags="pin" title=<<new-note-title>> priority="yellow" text="Write here ..."/>
+<$action-navigate $to=<<new-note-title>>/>
 </$let>
 \end
 
 \define _st-create-new-note()
-<span style="float:right">
-<$button  class="tc-btn-invisible tc-tiddlylink st-btn" tooltip="create new notice" actions=<<new-note-actions>> >
-{{$:/plugins/kookma/pinboard/images/file-alt}}
-</$button>
-</span>
+<% if [[$:/layout]get[text]match[$:/plugins/kookma/pinboard/ui/PageLayout/layout]] %>
+  <span style="float:left">
+    <$button class="tc-btn-invisible tc-tiddlylink st-btn" tooltip="create new notice" actions=<<new-note-actions>> >
+      {{$:/plugins/kookma/pinboard/images/file-alt}}
+    </$button>
+    <$button class="tc-btn-invisible tc-tiddlylink st-btn" tooltip="back to standard layout">
+      <$action-setfield $tiddler="$:/layout" text="" />
+      {{$:/core/images/standard-layout}}
+    </$button>
+  </span>
+<% else %>
+  <span style="float:right">
+    <$button class="tc-btn-invisible tc-tiddlylink st-btn" tooltip="create new notice" actions=<<new-note-actions>> >
+      {{$:/plugins/kookma/pinboard/images/file-alt}}
+    </$button>
+  </span>
+<% endif %>
 \end
 
 \define _st_addTag(newTag)
