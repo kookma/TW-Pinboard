@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "dev": "tiddlywiki-plugin-dev dev",
+    "dev:wiki": "tiddlywiki-plugin-dev dev --write-wiki",
+    "test": "tiddlywiki-plugin-dev test",
+    "publish": "npm run clean && tiddlywiki-plugin-dev publish",
+    "update": "npx npm-check-updates -u",
+    "new": "tiddlywiki-plugin-dev new",
+    "build:library": "npm run clean && tiddlywiki-plugin-dev build --library --output dist/library",
+    "publish:offline": "npm run clean && tiddlywiki-plugin-dev publish --offline"
+  },
+  "dependencies": {
+    "tiddlywiki": "^5.3.5",
+    "tiddlywiki-plugin-dev": "^0.3.1"
+  }
+}
