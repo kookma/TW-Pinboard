@@ -1,14 +1,17 @@
 code-body: yes
-modified: 20231229044551957
+modified: 20241014161636003
 title: $:/plugins/kookma/pinboard/macros/helper
 type: text/vnd.tiddlywiki
 
 \define new-note-actions()
 <$let new-note-title=<<unusedtitle baseName:"note" template:"$basename$ $count:3$">> >
-<$action-sendmessage $message="tm-new-tiddler" tags="pin" title=<<new-note-title>> priority="yellow" text="Write here ..."/>
-<$action-navigate $to=<<new-note-title>>/>
+<$action-createtiddler $basetitle=<<new-note-title>> tags="pin" priority="yellow" text="Write here ...">
+	<$action-sendmessage $message="tm-edit-tiddler" $param=<<createTiddler-title>> />
+	<$action-navigate $to=<<createTiddler-draftTitle>> $scroll=yes/>
+</$action-createtiddler>
 </$let>
 \end
+
 
 \define _st-create-new-note()
 <% if [[$:/layout]get[text]match[$:/plugins/kookma/pinboard/ui/PageLayout/layout]] %>

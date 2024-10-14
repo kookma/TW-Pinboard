@@ -3,7 +3,7 @@
     "name": "Pinboard",
     "description": "Create a board to pin messages and pictures",
     "author": "Mohammad Rahmani",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "core-version": ">=5.2.0",
     "source": "https://github.com/kookma/TW-Pinboard",
     "list": "readme license history",

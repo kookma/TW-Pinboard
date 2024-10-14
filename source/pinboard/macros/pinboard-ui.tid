@@ -1,9 +1,9 @@
-modified: 20231229044551957
-tags: $:/tags/Macro
+modified: 20241014161636003
+tags: $:/tags/Global
 title: $:/plugins/kookma/pinboard/macros/pinboard-ui
 type: text/vnd.tiddlywiki
 
-\define pinboard-ui()
+\procedure pinboard-ui()
 \import $:/plugins/kookma/pinboard/macros/folding-editor
 \import $:/plugins/kookma/pinboard/macros/helper
 <<_st-create-new-note>>
